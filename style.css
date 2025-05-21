@@ -1,0 +1,127 @@
+body {
+font-family: Arial, sans-serif;
+background: #f1f1f1;
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+header {
+background: #00b894;
+color: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 30px;
+user-select: none;
+font-weight: bold;
+font-size: 1.8rem;
+letter-spacing: 2px;
+}
+
+@keyframes blink {
+0%, 100% { opacity: 1; }
+50% { opacity: 0.5; }
+}
+
+.logo {
+animation: blink 2s infinite;
+}
+
+.social-icons a {
+margin-left: 15px;
+color: white;
+font-size: 1.4rem;
+text-decoration: none;
+transition: color 0.3s ease;
+vertical-align: middle;
+display: inline-block;
+}
+
+.social-icons a:hover {
+color: #019875;
+}
+
+.social-icons svg {
+fill: currentColor;
+width: 24px;
+height: 24px;
+vertical-align: middle;
+}
+
+.container {
+background: #fff;
+max-width: 600px;
+margin: 20px auto;
+padding: 30px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+flex-grow: 1;
+}
+
+h1 {
+color: #00b894;
+margin-bottom: 10px;
+text-align: center;
+}
+
+p {
+margin-bottom: 20px;
+text-align: center;
+}
+
+form label {
+font-weight: 600;
+margin-bottom: 5px;
+display: block;
+}
+
+form input,
+form textarea,
+form select {
+width: 100%;
+padding: 12px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 4px;
+font-size: 1rem;
+box-sizing: border-box;
+}
+
+button {
+background: linear-gradient(90deg, #00b894, #019875);
+color: white;
+padding: 14px 20px;
+border: none;
+cursor: pointer;
+font-weight: bold;
+border-radius: 6px;
+font-size: 1.1rem;
+width: 100%;
+transition: all 0.3s ease;
+box-shadow: 0 4px 6px rgba(0, 184, 148, 0.4);
+}
+
+button:hover {
+background: linear-gradient(90deg, #019875, #00b894);
+transform: scale(1.05);
+box-shadow: 0 6px 10px rgba(1, 152, 117, 0.7);
+}
+
+#price-display {
+font-weight: bold;
+color: #333;
+margin-bottom: 15px;
+font-size: 1.1rem;
+height: 24px;
+text-align: left;
+}
+
+.service-span{
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(217, 0, 255);
+    cursor: pointer;
+}
