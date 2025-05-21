@@ -6,12 +6,13 @@
   <title>Place Your Order - GrowthGrid</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
   <header>
-    <div class="logo">
-      <a href="index.html"><img src="images/499778759_122112265244852970_1209281478482666037_n.jpg" alt="GrowthGrid Logo" /></a>
-    </div>
+  <div class="logo">
+    <a href="index.html"><img src="images/499778759_122112265244852970_1209281478482666037_n.jpg" alt="GrowthGrid Logo" /></a>
+  </div>
     <div class="social-icons" aria-label="Social Media Links">
       <a href="https://www.facebook.com/GrowthGrid1" target="_blank" aria-label="Facebook" rel="noopener noreferrer" >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -49,7 +50,7 @@
       <input type="number" id="email" name="number" placeholder="Phone Number" required />
 
       <h1>Services</h1>
-      <p>আমাদের প্রিমিয়াম সার্ভিসের মধ্যে যে সার্ভিস টি প্রয়োজন সেটি সঠিকভাবে সিলেক্ট করে অর্ডার সাবমিট করুন, কোনোকিছু জানার থাকলে Details ফর্মে লিখে দিন, আমাদের <span class="service-span">GrowthGrid</span> টিম আপনার সাথে অতি শীঘ্রই যোগাযোগ করবে । </p><br>
+      <p>আমাদের প্রিমিয়াম সার্ভিসের মধ্যে যে সার্ভিস টি প্রয়োজন সেটি সঠিকভাবে সিলেক্ট করে অর্ডার সাবমিট করুন, কোনোকিছু জানার থাকলে Others ফর্মে লিখে দিন, আমাদের GrowthGrid টিম আপনার সাথে অতি শীঘ্রই যোগাযোগ করবে । </p><br>
 
       <label for="service">Premium Services* :</label>
       <select id="service" name="service">
@@ -68,14 +69,15 @@
       <div id="price-display"></div>
 
 
-      <label for="message">Details* :</label>
+      <label for="message">Others* :</label>
       <textarea id="message" name="message" placeholder="কতো ডলারের এডস চালাতে চান, বা অন্য কোনো বিষয়ে জানার থাকলে এখানে লিখুন।" required rows="5"></textarea>
 
       <button type="submit">Submit Order</button>
+
     </form>
   </div>
 
-<!-- ============Whastapp Button-========= -->
+
 <div class="floating-menu">
   <div class="main-toggle">
     <span class="toggle-icon">💬</span>
@@ -87,7 +89,69 @@
     <li><a href="https://facebook.com/GrowthGrid1" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
   </ul>
 </div>
-<!-- ============Whastapp Button-========= -->
+
+
+<footer>
+  <div class="footer-logo">
+    <h2>GrowthGrid</h2>
+  </div>
+
+  <div class="footer-grid">
+    <div class="footer-section">
+      <div class="footer-header" onclick="toggleSection(this)">
+        <span>ডলার রেট কতো..?</span>
+        <span class="icon">+</span>
+      </div>
+      <div class="footer-content">
+        <p>আমাদের ফেসবুক এড ক্যাম্পেইন এর ডলার রেট ৳ ১৫০ টাকা মাএ</p>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <div class="footer-header" onclick="toggleSection(this)">
+        <span>অগ্রীম পেমেন্ট করতে হবে..?</span>
+        <span class="icon">+</span>
+      </div>
+      <div class="footer-content">
+        <p>এড এক্টিভ হওয়ার পর দেখে পেমেন্ট করতে পারবেন, তাছাড়া অন্যান্য কাজে ৪০% অগ্রীম পেমেন্ট করতে হবে।</p>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <div class="footer-header" onclick="toggleSection(this)">
+        <span>আপনাদের অফিস কোথায়..?</span>
+        <span class="icon">+</span>
+      </div>
+      <div class="footer-content">
+        <p>আমাদের অফিস লোকেশনঃ- ১০/৩, কাটাসুর, মোহাম্মদপুর, ঢাকা - ১২০৭</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://m.me/GrowthGrid1" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://instagram.com/gazinasirahamed1" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+    <a href="https://wa.me/8801818601638" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2023 <a href="index.html">GrowthGrid.</a> All rights reserved.
+  </div>
+</footer>
+
+<script>
+  function toggleSection(header) {
+    if (window.innerWidth >= 768) return;
+
+    const content = header.nextElementSibling;
+    const icon = header.querySelector('.icon');
+
+    header.classList.toggle('active');
+    content.classList.toggle('open');
+    icon.textContent = content.classList.contains('open') ? '−' : '+';
+  }
+</script>
 
 
 <script src="script.js"></script>
