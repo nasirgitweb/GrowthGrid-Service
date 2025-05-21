@@ -1,6 +1,6 @@
 body {
 font-family: Arial, sans-serif;
-background: #f1f1f1;
+background: #0a192f;
 margin: 0;
 padding: 0;
 display: flex;
@@ -9,12 +9,11 @@ min-height: 100vh;
 }
 
 header {
-background: #00b894;
 color: white;
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 15px 30px;
+padding: 7px 30px;
 user-select: none;
 font-weight: bold;
 font-size: 1.8rem;
@@ -23,6 +22,7 @@ position: sticky;
 top: 0;
 z-index: 1000;
 background-color: #0a192f;
+
 }
 
 @keyframes blink {
@@ -43,6 +43,7 @@ background-color: #0a192f;
 .logo img:hover {
   transform: scale(1.1);
 }
+
 
 .social-icons a {
 margin-left: 15px;
@@ -70,7 +71,8 @@ background: #fff;
 max-width: 600px;
 margin: 20px auto;
 padding: 30px;
-border-radius: 8px;
+margin-top: 1px;
+border-radius: 10px;
 box-shadow: 0 0 10px rgba(0,0,0,0.1);
 flex-grow: 1;
 }
@@ -133,15 +135,27 @@ height: 24px;
 text-align: left;
 }
 
-.service-span{
-    text-decoration: none;
-    font-weight: 600;
-    color: rgb(217, 0, 255);
-    cursor: pointer;
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  background-color: #25d366;
+  padding: 12px;
+  border-radius: 30%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
 }
 
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
 
-/* -------------whatsapp button add--------------- */
+.whatsapp-float img {
+  width: 25px;
+  height: 25px;
+}
+
 
 .floating-menu {
   position: fixed;
@@ -220,4 +234,140 @@ text-align: left;
   pointer-events: none;
 }
 
-/* ---------------------------- */
+
+
+footer {
+    background-color: #0a192f;
+    padding: 30px 20px;
+}
+
+.footer-logo {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.footer-logo h2 {
+    font-size: 30px;
+    color: #FFA500;
+}
+
+.footer-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-section {
+    border-top: 1px solid #0a192f;
+}
+
+.footer-header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: #0a192f;
+    transition: background 0.3s;
+}
+
+.footer-header:hover {
+    background-color: #66239c;
+}
+
+.footer-header span{
+    color: #FFA500;
+}
+
+.footer-header span.icon {
+    transition: transform 0.3s;
+}
+
+.footer-header.active span.icon {
+    transform: rotate(45deg);
+}
+
+.footer-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s;
+    padding: 0 15px;
+    background-color: #0a192f;
+}
+
+.footer-content.open {
+    max-height: 100px;
+    padding: 15px;
+}
+
+.footer-content p {
+    display: block;
+    padding: 8px 0;
+    color: #ccc;
+    transition: color 0.3s;
+    text-align: left;
+}
+
+.footer-content p:hover {
+    color: #FFA500;
+}
+
+.social-icons {
+    text-align: center;
+    margin: 25px 0 15px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #FFA500;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.footer-bottom a{
+    color: #FFA500;
+    text-decoration: none;
+}
+
+
+
+@media (min-width: 768px) {
+    .footer-grid {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+
+    .footer-section {
+    flex: 1;
+    min-width: 200px;
+    border: none;
+    }
+
+    .footer-header {
+    cursor: default;
+    background-color: transparent;
+    }
+
+    .footer-header .icon {
+    display: none;
+    }
+
+    .footer-content {
+    max-height: none !important;
+    padding: 15px !important;
+    overflow: visible;
+    background-color: transparent;
+    }
+}
