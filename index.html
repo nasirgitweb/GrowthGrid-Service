@@ -46,33 +46,27 @@
       <input type="number" id="email" name="number" placeholder="Phone Number" required />
 
       <h1>Services</h1>
-      <p>আমাদের রেগুলার এবং প্রিমিয়াম সার্ভিসের মধ্যে যে সার্ভিস টি প্রয়োজন সেটি সঠিকভাবে সিলেক্ট করে অর্ডার সাবমিট করুন, কোনোকিছু জানার থাকলে Details ফর্মে লিখে দিন, আমাদের <span class="service-span">GrowthGrid</span> টিম আপনার সাথে অতি শীঘ্রই যোগাযোগ করবে । </p><br>
+      <p>আমাদের প্রিমিয়াম সার্ভিসের মধ্যে যে সার্ভিস টি প্রয়োজন সেটি সঠিকভাবে সিলেক্ট করে অর্ডার সাবমিট করুন, কোনোকিছু জানার থাকলে Details ফর্মে লিখে দিন, আমাদের <span class="service-span">GrowthGrid</span> টিম আপনার সাথে অতি শীঘ্রই যোগাযোগ করবে । </p><br>
 
-      <label for="service">Premium Services :</label>
+      <label for="service">Premium Services* :</label>
       <select id="service" name="service">
         <option value=""selected disabled="">Choose premium service...</option>
         <option value="Facebook Ads" data-price="14000">Facebook Monetization</option>
         <option value="YouTube SEO" data-price="16000">YouTube Monetization</option>
         <option value="YouTube Monetization" data-price="7500">TikTok Monetization</option>
-        <option>কোনোটিই নয়..!</option>
-      </select>
-
-      <div id="price-display"></div>
-
-      <label for="service">Regular Ads Services :</label>
-      <select id="service" name="service">
-        <!-- <option value=""selected disabled>-- Choose regular service --</option> -->
-        <option value=""selected disabled>Choose regular service...</option>
         <option>Facebook Ads</option>
         <option>YouTube Ads</option>
         <option>Google Ads</option>
         <option>Instagram Ads</option>
         <option>TikTok Ads</option>
-        <option>কোনোটিই নয়..!</option>
+        <!-- <option>কোনোটিই নয়..!</option> -->
       </select>
 
+      <div id="price-display"></div>
+
+
       <label for="message">Details :</label>
-      <textarea id="message" name="message" placeholder="কতো ডলারের এডস চালাতে চান, বা অন্য কোনো বিষয়ে জানার থাকলে এখানে লিখুন। " rows="5"></textarea>
+      <textarea id="message" name="message" placeholder="কতো ডলারের এডস চালাতে চান, বা অন্য কোনো বিষয়ে জানার থাকলে এখানে লিখুন।" required rows="5"></textarea>
 
       <button type="submit">Submit Order</button>
     </form>
