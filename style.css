@@ -128,24 +128,82 @@ text-align: left;
 
 
 /* -------------whatsapp button add--------------- */
-.whatsapp-float {
+
+.floating-menu {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 100;
-  background-color: #25d366;
-  padding: 12px;
-  border-radius: 30%;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+}
+
+/* Toggle বাটন */
+.main-toggle {
+  background: linear-gradient(135deg, #00b894, #019875);
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.8rem;
+  transition: transform 0.3s;
+  user-select: none;
+}
+
+.main-toggle:hover {
+  transform: rotate(90deg);
+}
+
+/* সোশ্যাল বাটনগুলো শুরুতে লুকানো থাকবে */
+.social-buttons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 70px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+  
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* যখন কার্সর toggle বা parent div এর উপরে থাকবে তখন সোশ্যাল বাটনগুলো দেখাবে */
+.floating-menu:hover .social-buttons {
+  opacity: 1;
+  visibility: visible;
+}
+
+.social-buttons li {
+  background-color: #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  line-height: 45px;
   transition: transform 0.3s ease;
 }
 
-.whatsapp-float:hover {
+.social-buttons li:hover {
   transform: scale(1.1);
 }
 
-.whatsapp-float img {
-  width: 25px;
-  height: 25px;
+.social-buttons li a {
+  color: #00b894;
+  font-size: 22px;
+  display: block;
 }
+
+.toggle-icon {
+  pointer-events: none;
+}
+
 /* ---------------------------- */
