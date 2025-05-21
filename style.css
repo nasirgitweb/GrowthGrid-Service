@@ -154,7 +154,7 @@ text-align: left;
 }
 
 .main-toggle:hover {
-  transform: rotate(90deg);
+  transform: rotate(360deg);
 }
 
 /* সোশ্যাল বাটনগুলো শুরুতে লুকানো থাকবে */
