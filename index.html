@@ -33,26 +33,23 @@
   </header>
 
   <div class="container">
-    <h1>Place Your Order</h1>
-    <p>আমাদের সার্ভিস নিতে এই ফর্মে আপনার নাম, ইমেইল এড্রেস এবং ফোন নাম্বার সঠিকভাবে দিন, আমাদের একজন প্রতিনিধি আপনার সাথে শীঘ্রই যোগাযোগ করবে।</p>
+    <h1>GrowthGrid <br> Digital Marketing Agency</h1>
+    <p>আমাদের প্রিমিয়াম সার্ভিস নিতে এই ফর্মে আপনার নাম, ইমেইল এড্রেস এবং ফোন নাম্বার সঠিকভাবে দিন, যে সার্ভিস টি প্রয়োজন সেটি সঠিকভাবে সিলেক্ট করে অর্ডার সাবমিট করুন, কোনোকিছু জানার থাকলে Others ফর্মে লিখে দিন, আমাদের GrowthGrid টিম আপনার সাথে অতি শীঘ্রই যোগাযোগ করবে ।</p>
 
     <form action="https://formsubmit.co/freelancernasir46@gmail.com" method="POST" id="orderForm">
       <input type="hidden" name="_captcha" value="false" />
       <input type="hidden" name="_subject" value="🛒 New Service Order - GrowthGrid" />
 
-      <label for="name">Name* :</label>
+      <label for="name" class="required-label">Name : </label>
       <input type="text" id="name" name="name" placeholder="Your Name" required />
 
-      <label for="email">Email* :</label>
+      <label for="email" class="required-label">Email :</label>
       <input type="email" id="email" name="email" placeholder="Your Email" required />
 
-      <label for="number">Phone* :</label>
+      <label for="number" class="required-label">Phone :</label>
       <input type="number" id="email" name="number" placeholder="Phone Number" required />
 
-      <h1>Services</h1>
-      <p>আমাদের প্রিমিয়াম সার্ভিসের মধ্যে যে সার্ভিস টি প্রয়োজন সেটি সঠিকভাবে সিলেক্ট করে অর্ডার সাবমিট করুন, কোনোকিছু জানার থাকলে Others ফর্মে লিখে দিন, আমাদের GrowthGrid টিম আপনার সাথে অতি শীঘ্রই যোগাযোগ করবে । </p><br>
-
-      <label for="service">Premium Services* :</label>
+      <label for="service" class="required-label">Premium Services :</label>
       <select id="service" name="service">
         <option value=""selected disabled="">Choose premium service...</option>
         <option value="Facebook Ads" data-price="14000">Facebook Monetization</option>
@@ -69,7 +66,7 @@
       <div id="price-display"></div>
 
 
-      <label for="message">Others* :</label>
+      <label for="message" class="required-label">Others :</label>
       <textarea id="message" name="message" placeholder="কতো ডলারের এডস চালাতে চান, বা অন্য কোনো বিষয়ে জানার থাকলে এখানে লিখুন।" required rows="5"></textarea>
 
       <button type="submit">Submit Order</button>
