@@ -161,7 +161,39 @@
   </div>
 </footer>
 
-<script>
+
+  
+
+  <script>
+  const basicSelect = document.getElementById('service-2');
+  const priceShow = document.getElementById('price-show');
+
+  basicSelect.addEventListener('change', function () {
+    const value = this.value;
+
+    switch (value) {
+      case "Facebook Ads":
+        priceShow.textContent = "ফেসবুক বিজ্ঞাপন কাস্টমাইজড প্ল্যানে দেওয়া হয়। বিস্তারিত জানতে যোগাযোগ করুন।";
+        break;
+      case "YouTube Ads":
+        priceShow.textContent = "ইউটিউব বিজ্ঞাপনের জন্য বিশেষ প্যাকেজ আছে। বিস্তারিত জানতে যোগাযোগ করুন।";
+        break;
+      case "Google Ads":
+        priceShow.textContent = "গুগল বিজ্ঞাপন সেবা নিয়ে বিস্তারিত জানার জন্য আমাদের টিমের সাথে যোগাযোগ করুন।";
+        break;
+      case "Instagram Ads":
+        priceShow.textContent = "ইনস্টাগ্রাম বিজ্ঞাপন কাস্টমভাবে নির্ধারণ করা হয়। যোগাযোগ করুন বিস্তারিত জানার জন্য।";
+        break;
+      case "none":
+        priceShow.textContent = "আপনি কোনো সার্ভিস বেছে নেননি।";
+        break;
+      default:
+        priceShow.textContent = "";
+    }
+  });
+</script>
+
+<!-- <script>
   function toggleSection(header) {
     if (window.innerWidth >= 768) return;
 
@@ -172,7 +204,7 @@
     content.classList.toggle('open');
     icon.textContent = content.classList.contains('open') ? '−' : '+';
   }
-</script>
+</script> -->
 
 
 <script src="script.js"></script>
