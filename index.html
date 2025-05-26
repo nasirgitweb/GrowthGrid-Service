@@ -49,21 +49,44 @@
       <label for="number" class="required-label">Phone :</label>
       <input type="number" id="email" name="number" placeholder="Phone Number" required />
 
-      <label for="service" class="required-label">Premium Services :</label>
-      <select id="service" name="service">
-        <option value=""selected disabled="">Choose premium service...</option>
-        <option value="Facebook Ads" data-price="14000">Facebook Monetization</option>
-        <option value="YouTube SEO" data-price="16000">YouTube Monetization</option>
-        <option value="YouTube Monetization" data-price="7500">TikTok Monetization</option>
-        <option>Facebook Ads</option>
-        <option>YouTube Ads</option>
-        <option>Google Ads</option>
-        <option>Instagram Ads</option>
-        <option>TikTok Ads</option>
-        <!-- <option>কোনোটিই নয়..!</option> -->
-      </select>
+    <label for="service">Premium Services* :</label>
+        <select id="service" name="service">
+          <option value=""selected disabled="">Choose premium service...</option>
+          <option value="Facebook Ads" data-price="14000">Facebook Monetization</option>
+          <option value="YouTube SEO" data-price="16000">YouTube Monetization</option>
+          <option value="YouTube Monetization" data-price="7500">TikTok Monetization</option>
+          <!-- <option>Facebook Ads</option>
+          <option>YouTube Ads</option>
+          <option>Google Ads</option>
+          <option>Instagram Ads</option>
+          <option>TikTok Ads</option> -->
+          <option value="none" data-price="0">কোনোটিই নয়..!</option>
+        </select>
+        <div id="price-display"></div>
+    
+    
+        <label for="service-2">Basic Services* :</label>
+        <select id="service-2" name="service-2">
+          <option value="" selected disabled>Choose premium service...</option>
+          <option value="Facebook Ads">Facebook Ads</option>
+          <option value="YouTube Ads">YouTube Ads</option>
+          <option value="Google Ads">Google Ads</option>
+          <option value="Instagram Ads">Instagram Ads</option>
+          <option value="none">কোনোটিই নয়..!</option>
+        </select>
+        <div id="price-show" class="price-output"></div>
 
-      <div id="price-display"></div>
+    <label for="message">Details* :</label>
+    <textarea id="message" name="message" placeholder="কতো ডলারের এডস চালাতে চান, বা অন্য কোনো বিষয়ে জানার থাকলে এখানে লিখুন।" required rows="5"></textarea>
+
+    <button type="submit">Submit Order</button>
+  </form>
+</div>
+
+    <!-- ============Whastapp Button-========= -->
+    <a href="https://wa.me/8801818601638" target="_blank" class="floating-whatsapp" title="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
 
 
       <label for="message" class="required-label">Others :</label>
