@@ -136,8 +136,15 @@ color: black;
 font-weight: bold;
 color: #333;
 margin-bottom: 15px;
-font-size: 1.1rem;
-height: 24px;
+font-size: 1rem;
+text-align: left;
+}
+
+#price-show {
+font-weight: bold;
+color: #333;
+margin-bottom: 15px;
+font-size: 1rem;
 text-align: left;
 }
 
